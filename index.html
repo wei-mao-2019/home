@@ -64,6 +64,44 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="cont_stop()" onmouseover="cont_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='cont_ani' class='hidden'><img src="images/cont.gif" width="160"></div>
+              <div id='cont_img'>
+                <a href="images/cont.gif"><img src="images/cont.jpg" width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function cont_start() {
+                  document.getElementById('cont_ani').style.display = 'inline';
+                  document.getElementById('cont_img').style.display = 'none';
+                }
+
+                function cont_stop() {
+                  document.getElementById('cont_ani').style.display = 'none';
+                  document.getElementById('cont_img').style.display = 'inline';
+                }
+                cont_stop()
+              </script>
+            </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2210.03954">
+              <papertitle>Contact-aware Human Motion Forecasting</papertitle>
+            </a>
+            <br>
+            <strong>Wei Mao</strong>,
+            <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
+            <a href="https://users.cecs.anu.edu.au/~hartley/">Richard Hartley</a>,
+            <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>
+            <br>
+            <em>NeurIPS</em>, 2022 &nbsp; <font color="red"><strong>(Spotlight)</strong></font>
+            <br>
+            <a href="https://arxiv.org/abs/2210.03954">arXiv</a> /
+            <a href="https://neurips.cc/virtual/2022/poster/54945">video</a> /
+            <a href="https://github.com/wei-mao-2019/ContAwareMotionPred">code</a>
+            <p></p>
+            <p>Predicting per-joint contact maps for human motion forecasting.</p>
+          </td>
+        </tr>
             <tr onmouseout="wat_stop()" onmouseover="wat_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div id='wat_ani' class='hidden'><img src="images/wat.gif" width="160"></div>
