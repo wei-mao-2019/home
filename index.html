@@ -104,6 +104,44 @@
               <p>Estimating visibility aware feature volume with ray-based sparsification for volumetric-based 3D reconstruction.</p>
             </td>
           </tr>
+          <tr onmouseout="denseatt_stop()" onmouseover="denseatt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='denseatt_ani' class='hidden'><img src="images/wacv23_denseatt.gif" width="160"></div>
+              <div id='denseatt_img'>
+                <a href="images/wacv23_denseatt.gif"><img src="images/wacv23_denseatt.jpg" width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function denseatt_start() {
+                  document.getElementById('denseatt_ani').style.display = 'inline';
+                  document.getElementById('denseatt_img').style.display = 'none';
+                }
+
+                function denseatt_stop() {
+                  document.getElementById('denseatt_ani').style.display = 'none';
+                  document.getElementById('denseatt_img').style.display = 'inline';
+                }
+                denseatt_stop()
+              </script>
+            </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openaccess.thecvf.com/content/WACV2023/html/Wang_Interacting_Hand-Object_Pose_Estimation_via_Dense_Mutual_Attention_WACV_2023_paper.html">
+              <papertitle>Interacting Hand-Object Pose Estimation via Dense Mutual Attention
+            </a>
+            <br>
+            <a href="https://github.com/rongakowang">Rong Wang</a>,
+            <strong>Wei Mao</strong>,
+            <a href="https://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>
+            <br>
+            <em>WACV</em>, 2023 &nbsp;
+            <br>
+            <a href="https://arxiv.org/abs/2211.08805">arXiv</a> /
+            <a href="https://www.youtube.com/watch?v=dQfK8nb-0i8">video</a> /
+            <a href="https://github.com/rongakowang/DenseMutualAttention">code</a>
+            <p></p>
+            <p>Mutual distance between hand and object for hand object pose estimation.</p>
+          </td>
+        </tr>
+
           <tr onmouseout="cont_stop()" onmouseover="cont_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div id='cont_ani' class='hidden'><img src="images/cont.gif" width="160"></div>
