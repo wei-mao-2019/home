@@ -56,44 +56,6 @@
         </tbody>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	    <tr onmouseout="visfusion_stop()" onmouseover="visfusion_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='vis_ani' class='hidden'><img src="images/cvpr23_visfusion.gif" width="160"></div>
-              <div id='vis_img'>
-                <a href="images/cvpr23_visfusion.gif"><img src="images/cvpr23_visfusion.jpg" width="160"></a>
-              </div>
-              <script type="text/javascript">
-                function visfusion_start() {
-                  document.getElementById('vis_ani').style.display = 'inline';
-                  document.getElementById('vis_img').style.display = 'none';
-                }
-
-                function visfusion_stop() {
-                  document.getElementById('vis_ani').style.display = 'none';
-                  document.getElementById('vis_img').style.display = 'inline';
-                }
-                cont_stop()
-              </script>
-            </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2304.10687">
-              <papertitle>VisFusion: Visibility-aware Online 3D Scene Reconstruction from Videos
-            </a>
-            <br>
-            <a href="https://github.com/huiyu-gao">Huiyu Gao</a>,
-            <strong>Wei Mao</strong>,
-            <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>
-            <br>
-            <em>CVPR</em>, 2023 &nbsp;
-            <br>
-            <a href="https://arxiv.org/abs/2304.10687">arXiv</a> /
-            <a href="https://huiyu-gao.github.io/visfusion/">project page</a> /
-            <a href="https://github.com/huiyu-gao/VisFusion">code</a>
-            <p></p>
-            <p>Estimating visibility aware feature volume with ray-based sparsification for volumetric-based 3D reconstruction.</p>
-          </td>
-        </tr>
-		
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
@@ -104,6 +66,44 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="visfusion_stop()" onmouseover="visfusion_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div id='vis_ani' class='hidden'><img src="images/cvpr23_visfusion.gif" width="160"></div>
+                <div id='vis_img'>
+                  <a href="images/cvpr23_visfusion.gif"><img src="images/cvpr23_visfusion.jpg" width="160"></a>
+                </div>
+                <script type="text/javascript">
+                  function visfusion_start() {
+                    document.getElementById('vis_ani').style.display = 'inline';
+                    document.getElementById('vis_img').style.display = 'none';
+                  }
+
+                  function visfusion_stop() {
+                    document.getElementById('vis_ani').style.display = 'none';
+                    document.getElementById('vis_img').style.display = 'inline';
+                  }
+                  visfusion_stop()
+                </script>
+              </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2304.10687">
+                <papertitle>VisFusion: Visibility-aware Online 3D Scene Reconstruction from Videos
+              </a>
+              <br>
+              <a href="https://github.com/huiyu-gao">Huiyu Gao</a>,
+              <strong>Wei Mao</strong>,
+              <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>
+              <br>
+              <em>CVPR</em>, 2023 &nbsp;
+              <br>
+              <a href="https://arxiv.org/abs/2304.10687">arXiv</a> /
+              <a href="https://huiyu-gao.github.io/visfusion/">project page</a> /
+              <a href="https://github.com/huiyu-gao/VisFusion">code</a>
+              <p></p>
+              <p>Estimating visibility aware feature volume with ray-based sparsification for volumetric-based 3D reconstruction.</p>
+            </td>
+          </tr>
           <tr onmouseout="cont_stop()" onmouseover="cont_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div id='cont_ani' class='hidden'><img src="images/cont.gif" width="160"></div>
