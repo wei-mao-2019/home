@@ -31,7 +31,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/wei.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/wei-circle.jpg" class="hoverZoomLink"></a>
+              <a href="images/wei_2024.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/wei_2024_circle.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -69,8 +69,85 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr onmouseout="sdfflow_stop()" onmouseover="sdfflow_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='sdfflow_ani' class='hidden'><img src="images/iclr24_sdfflow.gif" width="160"></div>
+              <div id='sdfflow_img'>
+                <a href="images/iclr24_sdfflow.gif"><img src="images/iclr24_sdfflow.jpg" width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function sdfflow_start() {
+                  document.getElementById('sdfflow_ani').style.display = 'inline';
+                  document.getElementById('sdfflow_img').style.display = 'none';
+                }
 
-            <tr onmouseout="visfusion_stop()" onmouseover="visfusion_start()">
+                function sdfflow_stop() {
+                  document.getElementById('sdfflow_ani').style.display = 'none';
+                  document.getElementById('sdfflow_img').style.display = 'inline';
+                }
+                sdfflow_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=rzF0R6GOd4">
+                <papertitle>Neural SDF Flow for 3D Reconstruction of Dynamic Scenes
+              </a>
+              <br>
+              <strong>Wei Mao</strong>,
+              <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
+              <a href="https://users.cecs.anu.edu.au/~hartley/">Richard Hartley</a>,
+              <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>
+              <br>
+              <em>ICLR</em>, 2024 &nbsp;
+              <br>
+              <a href="https://openreview.net/forum?id=rzF0R6GOd4">openreview</a> /
+              <a href="https://github.com/wei-mao-2019/SDFFlow">code</a>
+              <p></p>
+              <p>We propose SDF flow, a new implicit representation for dynamic scenes. We derived a linear relationship between scene flow and SDF flow bridging the scene geometry with its motion.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="deepsim_stop()" onmouseover="deepsim_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='deepsim_ani' class='hidden'><img src="images/neurips23_deepsim.gif" width="160"></div>
+              <div id='deepsim_img'>
+                <a href="images/neurips23_deepsim.gif"><img src="images/neurips23_deepsim.jpg" width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function deepsim_start() {
+                  document.getElementById('deepsim_ani').style.display = 'inline';
+                  document.getElementById('deepsim_img').style.display = 'none';
+                }
+
+                function deepsim_stop() {
+                  document.getElementById('deepsim_ani').style.display = 'none';
+                  document.getElementById('deepsim_img').style.display = 'inline';
+                }
+                deepsim_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=SxVHyYavHy">
+                <papertitle>DeepSimHO: Stable Pose Estimation for Hand-Object Interaction via Physics Simulation
+              </a>
+              <br>
+              <a href="https://github.com/rongakowang">Rong Wang</a>,
+              <strong>Wei Mao</strong>,
+              <a href="https://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>
+              <br>
+              <em>NeurIPS</em>, 2023 &nbsp;
+              <br>
+              <a href="https://openreview.net/forum?id=SxVHyYavHy">openreview</a> /
+              <a href="https://neurips.cc/virtual/2023/poster/71579">video</a> /
+              <a href="https://github.com/rongakowang/DeepSimHO">code</a>
+              <p></p>
+              <p>We propose to learn the stability score from physical simulators for predicting hand poses that can firmly grasp the objects.</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="visfusion_stop()" onmouseover="visfusion_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div id='vis_ani' class='hidden'><img src="images/cvpr23_visfusion.gif" width="160"></div>
                 <div id='vis_img'>
